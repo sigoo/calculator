@@ -1,0 +1,14 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sigoo/calculator.git",
+  "author": "陈勇 <chenyong@sigoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
