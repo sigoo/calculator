@@ -6,11 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
   <meta name="Description" content="功能强大、简单好用的在线科学计算器，大量数学函数." />
-    <!-- build:css calculator.min.css -->
-    <link href="api.css" rel="stylesheet">
-    <link href="calc_basic_container.css" rel="stylesheet">
-    <link href="loading.css" rel="stylesheet">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="calculator.min.css">
     <title>在线工具 | 科学计算器 </title>
 
   <script>
@@ -27,6 +23,9 @@
 
 
   <div role="navigation">
+    <a href="/" class="home-link hidden-until-load" aria-label="sigoo Logo">
+      <i class="dcg-icon-desmos"></i>
+    </a>
 
     <div class="footer hidden-until-load">
       <a href="https://www.sigoo.com">极像素</a>
@@ -53,14 +52,12 @@
 </script>
  <!-- Pull config information, and include it in Desmos.config -->
 
-    <!-- build:js calculator.min.js -->
-    <script src="calculator_basic.js"></script>
-    <!-- endbuild -->
+    <script src="calculator.min.js"></script>
 
   <script>
     require([
       'toplevel/calculator_basic',
-    ], function (Calc) {
+    ], function (Calc, TestBridge) {
       window.Calc = Calc;
     });
   </script>
