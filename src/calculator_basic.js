@@ -44233,7 +44233,7 @@ define("math/context", ["require", "console", "pjs", "underscore", "./plotter", 
                         _[e.methodName].apply(_, e.args)
                     })
                 };
-                var r = n('<iframe id="objc-bridge" style="position:absolute; left: -1000px; z-index: -1" src="desmos:loaded"/>').appendTo(document.body)
+                //var r = n('<iframe id="objc-bridge" style="position:absolute; left: -1000px; z-index: -1" src="desmos:loaded"/>').appendTo(document.body)
             })
         } else o.IS_ANDROID ? c = window.Android : d = !0;
         var x = u(i, function (e, t) {
@@ -44642,7 +44642,7 @@ define("math/context", ["require", "console", "pjs", "underscore", "./plotter", 
                             disabled: function () {
                                 return !t.canClear()
                             }, ariaLabel: function () {
-                                return t.t("clear all")
+                                return t.t("清除")
                             }, onTap: function () {
                                 return t.dispatch({
                                     type: "set-blank",
@@ -44652,7 +44652,7 @@ define("math/context", ["require", "console", "pjs", "underscore", "./plotter", 
                                 })
                             }
                         }, function () {
-                            return t.t("clear all")
+                            return t.t("清除")
                         })
                     }), n.createElement(l, {
                         predicate: function () {
@@ -44882,7 +44882,7 @@ define("math/context", ["require", "console", "pjs", "underscore", "./plotter", 
                             disabled: function () {
                                 return !t.canClear()
                             }, ariaLabel: function () {
-                                return t.t("clear all")
+                                return t.t("清除")
                             }, onTap: function () {
                                 return t.dispatch({
                                     type: "set-blank",
@@ -44892,7 +44892,7 @@ define("math/context", ["require", "console", "pjs", "underscore", "./plotter", 
                                 })
                             }
                         }, function () {
-                            return t.t("clear all")
+                            return t.t("清除")
                         })
                     }), n.createElement(c, {
                         predicate: function () {
